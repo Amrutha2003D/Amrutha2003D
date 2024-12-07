@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Basic HTML Form</h2>
+
+    <form action="/submit-form"method="POST">
+
+        <!--Text input-->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"value="Enter your name" required><br><br>
+
+        <!--Email Input-->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"value="Enter your email id"required><br><br>
+
+        <!--Age Input-->
+        <label for="age">Age:</label><br>
+        <input type="age" id="age"name="age" value="Enter your age" required><br><br>
+
+        <!--describing multiple options-->
+        <p>Which role better defines you</p>
+        <select name="role" id="role">
+            <option value="student">student</option>
+            <option value="intern">intern</option>
+            <option value="professional">professional</option>
+            <option value="others">others</option>
+        </select>
+
+        <!--Radio button-->
+        <p>Would you recommend your friend to join IUCEE</p>
+        <input type="radio" id="Yes" name="choose" value="Yes">
+        <label for="name">Yes</label><br>
+        <input type="radio" id="No" name="choose" value="No">
+        <label for="name">No</label><br>
+        <input type="radio" id="Maybe" name="choose" value="Maybe">
+        <label for="name">Maybe</label><br>
+
+        <!--choosing  multiple-->
+        <p>Languanges and Frameworks known(Check all that apply)</p>
+        <input type="checkbox"  id="C"name="C" value="C">
+        <label for="name">C</label>
+        <input type="checkbox" id="C++" name="C++" value="C++">
+        <label for="name">C++</label><br>
+        <input type="checkbox" id="Python"name="Python" value="Python">
+        <label for="name">Python</label><br>
+
+        <!--comments-->
+        <p>Any comments or suggestions</p>
+        <textarea name="comment" id="comment"></textarea>
+    
+    <input type="submit">
+        
+
+        
+</body>
+</html>
